@@ -34,6 +34,10 @@ sale-workflow:
     modules: []
     src: https://github.com/OCA/sale-workflow 10.0
 
+rest-framework:
+    modules: []
+    src: https://github.com/oca/rest-framework 10.0
+
 ak-odoo-incubator:
     modules: []
     src: https://github.com/akretion/ak-odoo-incubator 10-base_jsonify
@@ -48,7 +52,7 @@ connector-search-engine:
 
 odoo-shopinvader:
     modules: []
-    src: https://github.com/akretion/odoo-shopinvader 10.0-adyen
+    src: https://github.com/akretion/odoo-shopinvader 10.0
 
 payment-gateway:
     modules: []
