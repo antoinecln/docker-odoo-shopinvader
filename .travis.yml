@@ -16,4 +16,4 @@ script:
   - docker build --no-cache -t current-latest .
 
 after_success:
-- travis/publish.sh
+  - ../travis/publish.sh
