@@ -1,6 +1,10 @@
 odoo:
-    modules: []
-    src: https://github.com/OCA/ocb 10.0
+  remotes:
+    origin: https://github.com/OCA/ocb
+    acsone: https://github.com/acsone/odoo
+  merges:
+    - origin 10.0
+    - acsone 10.0-_onchange_spec_bug-lmi
 
 bank-payment:
     modules: []
@@ -40,11 +44,7 @@ rest-framework:
 
 ak-odoo-incubator:
     modules: []
-    src: https://github.com/akretion/ak-odoo-incubator 10-base_jsonify
-
-incubator-sparse-field-list:
-    modules: []
-    src: https://github.com/akretion/ak-odoo-incubator 10-base_sparse_field_list
+    src: https://github.com/akretion/ak-odoo-incubator 10.0
 
 connector-search-engine:
     modules: []
@@ -54,21 +54,17 @@ odoo-shopinvader:
     modules: []
     src: https://github.com/akretion/odoo-shopinvader 10.0
 
+rest-framework:
+    modules: []
+    src: https://github.com/acsone/rest-framework 10.0
+
 payment-gateway:
     modules: []
-    src: https://github.com/akretion/payment-gateway 10
-
-product-attribute-mig-attr:
-    modules: []
-    src: https://github.com/akretion/product-attribute 10-migr-custom-attributes
+    src: https://github.com/akretion/payment-gateway 10.0
 
 server-tools:
     modules: []
-    src: https://github.com/akretion/server-tools 10.0-improve-onchange-helper
-
-server-tools-mig-attr:
-    modules: []
-    src: https://github.com/akretion/server-tools 10-migr-custom-attributes
+    src: https://github.com/oca/server-tools 10.0
 
 storage:
     modules: []

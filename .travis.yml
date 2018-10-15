@@ -1,0 +1,19 @@
+sudo: required
+
+services: docker
+
+env:
+  matrix:
+    - VERSION=10.0
+
+before_install:
+  - sudo pip install git+https://github.com/akretion/ak
+
+script:
+  - cd odoo
+  - ak build
+  - sed -i -n '/# Only for dev/q;p' .dockerignore
+  - docker build --no-cache -t current-latest .
+
+after_success:
+- travis/publish.sh

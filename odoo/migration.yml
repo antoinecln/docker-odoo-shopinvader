@@ -3,16 +3,11 @@ migration:
     install_command: odoo
   versions:
     - version: 2018.06.30
-      operations:
-        pre:
-          - "sh -c 'psql -c \"CREATE EXTENSION pg_trgm;\"'"
-        post:
-          - anthem songs.install.base::main
       addons:
         upgrade:
-          - sale
-      modes:
-        demo:
-          operations:
-            post:
-              - anthem songs.install.demo::main
+          - shopinvader_payment_stripe
+          - shopinvader_locomotive_payment_adyen
+          - shopinvader_algolia
+          - shopinvader_product_stock_state
+          - shopinvader_image
+          - shopinvader_custom_attribute

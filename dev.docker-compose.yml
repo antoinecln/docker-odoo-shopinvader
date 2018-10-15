@@ -22,6 +22,7 @@ services:
       - MARABUNTA_MODE=demo
       - VIRTUAL_HOST=shopinvader-docky.dy
       - VIRTUAL_PORT=8069
+      - DEMO=True
     links:
       - db
     networks:
@@ -29,5 +30,6 @@ services:
         aliases:
           - shopinvader-docky.dy
     volumes:
-      - ./odoo:/opt/odoo
+      - ./odoo:/odoo
+      - ./data:/data
 version: '3'
