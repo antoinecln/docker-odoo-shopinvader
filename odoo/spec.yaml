@@ -6,6 +6,10 @@ odoo:
     - origin 10.0
     - acsone 10.0-_onchange_spec_bug-lmi
 
+account-reconcile:
+    modules: []
+    src: https://github.com/OCA/account-reconcile 10.0
+
 bank-payment:
     modules: []
     src: https://github.com/OCA/bank-payment 10.0
