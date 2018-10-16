@@ -15,6 +15,7 @@ COPY ./VERSION /odoo/VERSION
 COPY ./setup.py /odoo/setup.py
 COPY ./songs /odoo/songs
 COPY ./migration.yml /odoo/migration.yml
+COPY ./links /odoo/links
 RUN pip install -e /odoo
 
 COPY /templates/odoo.cfg.tmpl /templates/odoo.cfg.tmpl
