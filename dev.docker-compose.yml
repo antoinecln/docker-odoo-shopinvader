@@ -18,6 +18,7 @@ services:
       - DB_USER=odoo
       - DB_PASS=odoo
       - DB_NAME=db
+      - DB_HOST=db
       - RUNNING_ENV=dev
       - MARABUNTA_MODE=demo
       - VIRTUAL_HOST=shopinvader-docky.dy
@@ -31,5 +32,7 @@ services:
           - shopinvader-docky.dy
     volumes:
       - ./odoo:/odoo
-      - ./data:/data
+      - ./data/addons:/data/odoo/addons
+      - ./data/filestore:/data/odoo/filestore
+      - ./data/sessions:/data/odoo/sessions
 version: '3'
