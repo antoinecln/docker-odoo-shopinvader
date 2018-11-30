@@ -1,11 +1,15 @@
 /ak/
 /bin/
-/external-src/
 /include/
 /lib/
 /local/
 /man/
 /share/
+/data/
+/odoo/external-src/
+/odoo/src/
+/.db/
+/odoo/my_project_name.egg-info/
+/odoo/repo.yaml
 
-/repo.yaml
 /pip-selfcheck.json
