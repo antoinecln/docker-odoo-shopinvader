@@ -1,7 +1,33 @@
-# Ak recipe for ShopInvader project 
+# Odoo Project with Ak recipe for ShopInvader project 
+
+## How to use it
 
 Clone it
 
-Define your repository as virtual environement
+```
+git clone https://github.com/akretion/docker-odoo-shopinvader
+```
 
-Then go to https://github.com/akretion/ak/wiki
+
+Launch ak
+
+If you need help on ak: https://github.com/akretion/ak/wiki
+
+
+```
+ak build
+```
+
+Start docky
+
+```
+docky run
+```
+
+Inside docky launch the cmd *migrate*
+
+```
+migrate
+```
+
+Now you odoo is ready with everything is install
