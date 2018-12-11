@@ -58,10 +58,6 @@ odoo-shopinvader:
     modules: []
     src: https://github.com/akretion/odoo-shopinvader 10.0
 
-rest-framework:
-    modules: []
-    src: https://github.com/acsone/rest-framework 10.0
-
 payment-gateway:
     modules: []
     src: https://github.com/akretion/payment-gateway 10.0
