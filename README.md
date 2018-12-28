@@ -5,7 +5,7 @@
 Clone it
 
 ```
-git clone https://github.com/akretion/docker-odoo-shopinvader
+git clone https://github.com/akretion/docker-odoo-shopinvader -b 'branch's name'
 ```
 
 
@@ -15,7 +15,23 @@ If you need help on ak: https://github.com/akretion/ak/wiki
 
 
 ```
+cd odoo
+```
+
+Then 
+
+```
 ak build
+```
+Return main folder
+
+```
+cd ..
+```
+and build your app with docky
+
+```
+docky build
 ```
 
 Start docky
