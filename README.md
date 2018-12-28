@@ -46,4 +46,6 @@ Inside docky launch the cmd *migrate*
 migrate
 ```
 
-Now you odoo is ready with everything is install
+Now your odoo is ready with everything is install
+Avaiblable on : http://shopinvader-docky.dy
+
