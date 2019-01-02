@@ -40,10 +40,15 @@ Start docky
 docky run
 ```
 
-Inside docky launch the cmd *migrate*
+Inside docky launch the cmd *migrate* to update your database
 
 ```
 migrate
+```
+and then run your odoo inside Docky
+
+```
+odoo
 ```
 
 Now your odoo is ready with everything is install
